@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>配置 · GitBook 最佳实践</title>
+        <title>配置 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,19 +17,19 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
-                
-            
-                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
                 
             
                 
@@ -41,19 +41,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc-button/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-archeros/theme-archeros.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-fexa/fexa.css">
                 
             
         
@@ -91,11 +83,26 @@
     <body>
         
 <div class="book">
+	<div class="header-inner">
+		<!-- LOGO -->
+		<div class="logo"></div>
+		<span class="title"></span>
+
+		<!-- Search -->
+		
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+
+		<!-- Nav -->
+		<ul class="header-nav">
+			
+		</ul>
+	</div>
 
 	<div class="book-summary">
-		<!-- LOGO -->
-		<div class="logo">
-		</div>
+		<div class="book-summary-title">文档目录</div>
 		
 		
 		<nav role="navigation">
@@ -105,16 +112,7 @@
 <ul class="summary">
     
     
-    
-        
-        <li>
-            <a href="/" target="_blank" class="custom-link">GitBook 最佳实践</a>
-        </li>
-    
-    
 
-    
-    <li class="divider"></li>
     
 
     
@@ -184,7 +182,7 @@
                 <span>
             
                     
-                    个性化
+                    进阶配置
             
                 </span>
             
@@ -300,7 +298,7 @@
                 <span>
             
                     
-                    部署
+                    部署发布
             
                 </span>
             
@@ -335,6 +333,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    [Http basic by nginx]
+            
+                </span>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -360,32 +371,30 @@
 
 	<!-- Content nav -->
 	<div class="book-anchor">
+		<div class="book-anchor-title">在这篇文章中:</div>
 		<div class="book-anchor-body">
+
 		</div>
 	</div>
 
 	<div class="book-body">
-		<div class="header-inner">
-			<!-- Nav -->
-			<ul class="header-nav">
-				
-			</ul>
-
-			<!-- Home -->
-			<!-- 
-			<div id="homeIcon" class="home-icon"></div>
-			 -->
-			<!-- Search -->
-			<div id="searchIcon" class="search-icon"></div>
-			
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="输入并搜索" />
-</div>
-
-		</div>
 		
 		<div class="body-inner">
 			
+			
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >配置</a>
+    </h1>
+</div>
+
+
+
 
 			<div class="page-wrapper" tabindex="-1" role="main">
 				<div class="page-inner">
@@ -394,7 +403,6 @@
     <div class="search-noresults">
     
 					<section class="normal markdown-section">
-						<!-- 文章内容 -->
 						
 						<h1 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h1>
 <h2 id="&#x4E00;&#x3001;&#x6587;&#x4EF6;&#x8BF4;&#x660E;">&#x4E00;&#x3001;&#x6587;&#x4EF6;&#x8BF4;&#x660E;</h2>
@@ -514,83 +522,75 @@
 </table>
 <p>&#x672C;&#x6559;&#x7A0B;&#x7684; <code>book.json</code></p>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;GitBook &#x6700;&#x4F73;&#x5B9E;&#x8DF5;&quot;</span>,
-    <span class="hljs-string">&quot;author&quot;</span>: <span class="hljs-string">&quot;dongxz&quot;</span>,
-    <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;&#x4F7F;&#x7528; GitBook + Typora + Git &#x6765;&#x5199;&#x4F5C;&#x7684;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&quot;</span>,
-    <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;zh-hans&quot;</span>,
-    <span class="hljs-string">&quot;links&quot;</span>: {
-        <span class="hljs-string">&quot;sidebar&quot;</span>: {
-            <span class="hljs-string">&quot;GitBook &#x6700;&#x4F73;&#x5B9E;&#x8DF5;&quot;</span>: <span class="hljs-string">&quot;/&quot;</span>
-        }
+  <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;GitBook &#x6700;&#x4F73;&#x5B9E;&#x8DF5;&quot;</span>,
+  <span class="hljs-string">&quot;author&quot;</span>: <span class="hljs-string">&quot;dongxz&quot;</span>,
+  <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;&#x4F7F;&#x7528; GitBook + Typora + Git &#x6765;&#x5199;&#x4F5C;&#x7684;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&quot;</span>,
+  <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;zh-hans&quot;</span>,
+  <span class="hljs-string">&quot;plugins&quot;</span>: [
+    <span class="hljs-string">&quot;-lunr&quot;</span>,
+    <span class="hljs-string">&quot;-search&quot;</span>,
+    <span class="hljs-string">&quot;-sharing&quot;</span>,
+    <span class="hljs-string">&quot;-fontsettings&quot;</span>,
+    <span class="hljs-string">&quot;code&quot;</span>,
+    <span class="hljs-string">&quot;todo&quot;</span>,
+    <span class="hljs-string">&quot;splitter&quot;</span>,
+    <span class="hljs-string">&quot;search-pro&quot;</span>,
+    <span class="hljs-string">&quot;advanced-emoji&quot;</span>,
+    <span class="hljs-string">&quot;expandable-chapters&quot;</span>,
+    <span class="hljs-string">&quot;back-to-top-button&quot;</span>,
+    <span class="hljs-string">&quot;theme-fexa&quot;</span>
+  ],
+  <span class="hljs-string">&quot;pluginsConfig&quot;</span>: {
+    <span class="hljs-string">&quot;theme-fexa&quot;</span>: {
+      <span class="hljs-string">&quot;favicon&quot;</span>: <span class="hljs-string">&quot;./favicon.ico&quot;</span>,
+      <span class="hljs-string">&quot;logo&quot;</span>: <span class="hljs-string">&quot;./logo.png&quot;</span>,
+      <span class="hljs-string">&quot;search-placeholder&quot;</span>: <span class="hljs-string">&quot;&#x8F93;&#x5165;&#x5173;&#x952E;&#x5B57;&#x641C;&#x7D22;&quot;</span>
     },
-    <span class="hljs-string">&quot;plugins&quot;</span>: [
-        <span class="hljs-string">&quot;insert-logo&quot;</span>,
-        <span class="hljs-string">&quot;github&quot;</span>,
-        <span class="hljs-string">&quot;-lunr&quot;</span>, 
-        <span class="hljs-string">&quot;-search&quot;</span>, 
-        <span class="hljs-string">&quot;search-pro&quot;</span>,
-        <span class="hljs-string">&quot;-sharing&quot;</span>,
-        <span class="hljs-string">&quot;sharing-plus&quot;</span>,
-        <span class="hljs-string">&quot;code&quot;</span>,
-        <span class="hljs-string">&quot;todo&quot;</span>,
-        <span class="hljs-string">&quot;advanced-emoji&quot;</span>,
-        <span class="hljs-string">&quot;emphasize&quot;</span>,
-        <span class="hljs-string">&quot;splitter&quot;</span>,
-        <span class="hljs-string">&quot;expandable-chapters&quot;</span>,
-        <span class="hljs-string">&quot;back-to-top-button&quot;</span>,
-        <span class="hljs-string">&quot;simple-page-toc&quot;</span>,
-        <span class="hljs-string">&quot;page-toc-button&quot;</span>,
-        <span class="hljs-string">&quot;theme-archeros&quot;</span>
-    ],
-    <span class="hljs-string">&quot;pluginsConfig&quot;</span>: {
-        <span class="hljs-string">&quot;theme-archeros&quot;</span>:{
-            <span class="hljs-string">&quot;search-placeholder&quot;</span>:<span class="hljs-string">&quot;&#x8BF7;&#x8F93;&#x5165;&#x641C;&#x7D22;&#x5173;&#x952E;&#x5B57;&quot;</span>, 
-            <span class="hljs-string">&quot;logo&quot;</span>:<span class="hljs-string">&quot;/assets/logo.png&quot;</span>, 
-            <span class="hljs-string">&quot;favicon&quot;</span>: <span class="hljs-string">&quot;/assets/favicon.ico&quot;</span>,
-            <span class="hljs-string">&quot;copyright&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
-            <span class="hljs-string">&quot;modify_label&quot;</span>: <span class="hljs-string">&quot;&#x65F6;&#x95F4;&#xFF1A;&quot;</span>,
-            <span class="hljs-string">&quot;modify_format&quot;</span>: <span class="hljs-string">&quot;YYYY-MM-DD HH:mm:ss&quot;</span>
-        },
-        <span class="hljs-string">&quot;insert-logo&quot;</span>: {
-            <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;/logo.jpg&quot;</span>,
-            <span class="hljs-string">&quot;style&quot;</span>: <span class="hljs-string">&quot;background: none; max-height: 30px; min-height: 30px;&quot;</span>
-        },
-        <span class="hljs-string">&quot;github&quot;</span>: {
-            <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://github.com/dongxz/gitbooks&quot;</span>
-        },
-        <span class="hljs-string">&quot;sharing&quot;</span>: {
-            <span class="hljs-string">&quot;facebook&quot;</span>: <span class="hljs-literal">true</span>,
-            <span class="hljs-string">&quot;twitter&quot;</span>: <span class="hljs-literal">true</span>,
-            <span class="hljs-string">&quot;google&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;weibo&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;instapaper&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;vk&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;all&quot;</span>: [
-                <span class="hljs-string">&quot;facebook&quot;</span>, <span class="hljs-string">&quot;google&quot;</span>, <span class="hljs-string">&quot;twitter&quot;</span>, <span class="hljs-string">&quot;weibo&quot;</span>, <span class="hljs-string">&quot;instapaper&quot;</span>
-            ]
-        },
-        <span class="hljs-string">&quot;simple-page-toc&quot;</span>: {
-            <span class="hljs-string">&quot;maxDepth&quot;</span>: <span class="hljs-number">3</span>,
-            <span class="hljs-string">&quot;skipFirstH1&quot;</span>: <span class="hljs-literal">true</span>
-        },
-        <span class="hljs-string">&quot;page-toc-button&quot;</span>: {
-            <span class="hljs-string">&quot;maxTocDepth&quot;</span>: <span class="hljs-number">2</span>,
-            <span class="hljs-string">&quot;minTocSize&quot;</span>: <span class="hljs-number">2</span>
-        }
+    <span class="hljs-string">&quot;code&quot;</span>: {
+      <span class="hljs-string">&quot;copyButtons&quot;</span>: <span class="hljs-literal">true</span>
     }
+  },
+  <span class="hljs-string">&quot;variables&quot;</span>: {
+    <span class="hljs-string">&quot;themeFexa&quot;</span>: {
+      <span class="hljs-string">&quot;nav&quot;</span>: [
+        {
+          <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x89E3;&#x51B3;&#x65B9;&#x6848;&quot;</span>,
+          <span class="hljs-string">&quot;target&quot;</span>: <span class="hljs-string">&quot;_blank&quot;</span>,
+          <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;/&quot;</span>
+        },
+        {
+          <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x4EA7;&#x54C1;&#x4E2D;&#x5FC3;&quot;</span>,
+          <span class="hljs-string">&quot;target&quot;</span>: <span class="hljs-string">&quot;_blank&quot;</span>,
+          <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;/&quot;</span>
+        },
+        {
+          <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x5F00;&#x53D1;&#x8005;&#x6587;&#x6863;&quot;</span>,
+          <span class="hljs-string">&quot;target&quot;</span>: <span class="hljs-string">&quot;_blank&quot;</span>,
+          <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;/&quot;</span>
+        },
+        {
+          <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x7BA1;&#x7406;&#x63A7;&#x5236;&#x53F0;&quot;</span>,
+          <span class="hljs-string">&quot;target&quot;</span>: <span class="hljs-string">&quot;_blank&quot;</span>,
+          <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;/&quot;</span>,
+          <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;console&quot;</span>,
+          <span class="hljs-string">&quot;border&quot;</span>: <span class="hljs-string">&quot;nav-border&quot;</span>
+        }
+      ],
+      <span class="hljs-string">&quot;showHome&quot;</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-string">&quot;showNavigator&quot;</span>: <span class="hljs-literal">false</span>
+    }
+  }
 }
 </code></pre>
-<footer class="page-footer"><span class="copyright"></span></footer>
-						
+<p>&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x60F3;&#x8981;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x6682;&#x65F6;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x5408;&#x9002;&#x7684;&#x7EC4;&#x4EF6;</p>
+<ul>
+<li>&#x4EE3;&#x7801;&#x5757;&#x80CC;&#x53D8;&#x66F4;&#x989C;&#x8272;</li>
+<li>&#x5206;&#x7EA7;&#x6807;&#x9898;&#x53D8;&#x66F4;&#x989C;&#x8272;</li>
+</ul>
 
-						<!-- 文章分页 -->
 						
-						<div class="page-pagination">
-							
-							
-							
-						</div>
-						
+					</section>
+					
     </div>
     <div class="search-results">
         <div class="has-results">
@@ -607,18 +607,21 @@
     </div>
 </div>
 
-					</section>
-					
 				</div>
 			</div>
 			
 		</div>
 
+		
+		
+		
+		
+		
 	</div>
 	<script>
 		var gitbook = gitbook || [];
-		gitbook.push(function () {
-			gitbook.page.hasChanged({"page":{"title":"配置","level":"1.3.1","depth":2,"next":{"title":"插件","level":"1.3.2","depth":2,"ref":"","articles":[{"title":"使用说明","level":"1.3.2.1","depth":3,"path":"chapter02/plugins/gitbook-plugin-useage.md","ref":"chapter02/plugins/gitbook-plugin-useage.md","articles":[]},{"title":"默认配置","level":"1.3.2.2","depth":3,"path":"chapter02/plugins/gitbook-plugin-default.md","ref":"chapter02/plugins/gitbook-plugin-default.md","articles":[]},{"title":"目录导航","level":"1.3.2.3","depth":3,"path":"chapter02/plugins/gitbook-plugin-navigation.md","ref":"chapter02/plugins/gitbook-plugin-navigation.md","articles":[]},{"title":"功能增强","level":"1.3.2.4","depth":3,"path":"chapter02/plugins/gitbook-plugin-function.md","ref":"chapter02/plugins/gitbook-plugin-function.md","articles":[]}]},"previous":{"title":"个性化","level":"1.3","depth":1,"ref":"","articles":[{"title":"配置","level":"1.3.1","depth":2,"path":"chapter02/settings.md","ref":"chapter02/settings.md","articles":[]},{"title":"插件","level":"1.3.2","depth":2,"ref":"","articles":[{"title":"使用说明","level":"1.3.2.1","depth":3,"path":"chapter02/plugins/gitbook-plugin-useage.md","ref":"chapter02/plugins/gitbook-plugin-useage.md","articles":[]},{"title":"默认配置","level":"1.3.2.2","depth":3,"path":"chapter02/plugins/gitbook-plugin-default.md","ref":"chapter02/plugins/gitbook-plugin-default.md","articles":[]},{"title":"目录导航","level":"1.3.2.3","depth":3,"path":"chapter02/plugins/gitbook-plugin-navigation.md","ref":"chapter02/plugins/gitbook-plugin-navigation.md","articles":[]},{"title":"功能增强","level":"1.3.2.4","depth":3,"path":"chapter02/plugins/gitbook-plugin-function.md","ref":"chapter02/plugins/gitbook-plugin-function.md","articles":[]}]},{"title":"主题","level":"1.3.3","depth":2,"path":"chapter02/theme.md","ref":"chapter02/theme.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github","-lunr","-search","search-pro","-sharing","sharing-plus","code","todo","advanced-emoji","splitter","expandable-chapters","back-to-top-button","simple-page-toc","page-toc-button","theme-archeros"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/dongxz/gitbooks"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"search-pro":{},"theme-archeros":{"search-placeholder":"请输入搜索关键字","logo":"/assets/logo.png","favicon":"/assets/favicon.ico","copyright":"","modify_label":"时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"dongxz","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook 最佳实践","language":"zh-hans","links":{"sidebar":{"GitBook 最佳实践":"/"}},"gitbook":"*","description":"使用 GitBook + Typora + Git 来写作的最佳实践"},"file":{"path":"chapter02/settings.md","mtime":"2019-12-29T11:45:08.132Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-29T14:54:34.615Z"},"basePath":"..","book":{"language":""}});
+		gitbook.push(function() {
+			gitbook.page.hasChanged({"page":{"title":"配置","level":"1.3.1","depth":2,"next":{"title":"插件","level":"1.3.2","depth":2,"ref":"","articles":[{"title":"使用说明","level":"1.3.2.1","depth":3,"path":"chapter02/plugins/gitbook-plugin-useage.md","ref":"chapter02/plugins/gitbook-plugin-useage.md","articles":[]},{"title":"默认配置","level":"1.3.2.2","depth":3,"path":"chapter02/plugins/gitbook-plugin-default.md","ref":"chapter02/plugins/gitbook-plugin-default.md","articles":[]},{"title":"目录导航","level":"1.3.2.3","depth":3,"path":"chapter02/plugins/gitbook-plugin-navigation.md","ref":"chapter02/plugins/gitbook-plugin-navigation.md","articles":[]},{"title":"功能增强","level":"1.3.2.4","depth":3,"path":"chapter02/plugins/gitbook-plugin-function.md","ref":"chapter02/plugins/gitbook-plugin-function.md","articles":[]}]},"previous":{"title":"进阶配置","level":"1.3","depth":1,"ref":"","articles":[{"title":"配置","level":"1.3.1","depth":2,"path":"chapter02/settings.md","ref":"chapter02/settings.md","articles":[]},{"title":"插件","level":"1.3.2","depth":2,"ref":"","articles":[{"title":"使用说明","level":"1.3.2.1","depth":3,"path":"chapter02/plugins/gitbook-plugin-useage.md","ref":"chapter02/plugins/gitbook-plugin-useage.md","articles":[]},{"title":"默认配置","level":"1.3.2.2","depth":3,"path":"chapter02/plugins/gitbook-plugin-default.md","ref":"chapter02/plugins/gitbook-plugin-default.md","articles":[]},{"title":"目录导航","level":"1.3.2.3","depth":3,"path":"chapter02/plugins/gitbook-plugin-navigation.md","ref":"chapter02/plugins/gitbook-plugin-navigation.md","articles":[]},{"title":"功能增强","level":"1.3.2.4","depth":3,"path":"chapter02/plugins/gitbook-plugin-function.md","ref":"chapter02/plugins/gitbook-plugin-function.md","articles":[]}]},{"title":"主题","level":"1.3.3","depth":2,"path":"chapter02/theme.md","ref":"chapter02/theme.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-fontsettings","code","todo","splitter","search-pro","advanced-emoji","expandable-chapters","back-to-top-button","theme-fexa"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"todo":{},"splitter":{},"search-pro":{},"theme-fexa":{"logo":"/assets/logo.jpg","favicon":"/assets/favicon.ico","search-placeholder":"输入关键字搜索"},"code":{"copyButtons":true},"highlight":{},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"dongxz","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"showLogo":false,"showTitle":false,"showNavigator":false}},"title":"","language":"zh-hans","gitbook":"*","description":"使用 GitBook + Typora + Git 来写作的最佳实践"},"file":{"path":"chapter02/settings.md","mtime":"2020-01-17T02:57:33.237Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-05T17:17:24.093Z"},"basePath":"..","book":{"language":""}});
 		});
 	</script>
 </div>
@@ -628,7 +631,11 @@
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
         
     
         
@@ -640,18 +647,6 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
         <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
         
     
@@ -660,15 +655,7 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-theme-archeros/theme-archeros.js"></script>
+        <script src="../gitbook/gitbook-plugin-theme-fexa/fexa.js"></script>
         
     
 
