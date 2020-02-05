@@ -225,7 +225,7 @@
                 <a href="../chapter02/plugins/gitbook-plugin-useage.html">
             
                     
-                    使用说明
+                    插件说明
             
                 </a>
             
@@ -238,7 +238,7 @@
                 <a href="../chapter02/plugins/gitbook-plugin-default.html">
             
                     
-                    默认配置
+                    默认插件
             
                 </a>
             
@@ -251,7 +251,7 @@
                 <a href="../chapter02/plugins/gitbook-plugin-navigation.html">
             
                     
-                    目录导航
+                    目录导航类插件
             
                 </a>
             
@@ -264,7 +264,7 @@
                 <a href="../chapter02/plugins/gitbook-plugin-function.html">
             
                     
-                    功能增强
+                    功能增强类插件
             
                 </a>
             
@@ -335,19 +335,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" >
-            
-                <span>
-            
-                    
-                    [Http basic by nginx]
-            
-                </span>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -407,6 +394,25 @@
 					<section class="normal markdown-section">
 						
 						<h1 id="github-page">GitHub Page</h1>
+<h3 id="&#x521B;&#x5EFA;github&#x4ED3;&#x5E93;">&#x521B;&#x5EFA;GitHub&#x4ED3;&#x5E93;</h3>
+<p>&#x521B;&#x5EFA; Public &#x4ED3;&#x5E93;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x4E00;&#x7EA7;&#x76EE;&#x5F55;&#xFF08;&#x5982;&#x4E0B;&#x56FE; <code>docs</code> &#x76EE;&#x5F55;&#xFF09;&#x5B58;&#x653E; <code>gitbook build results</code>&#xFF0C;&#x65B9;&#x4FBF;&#x540E;&#x7EED;&#x8986;&#x76D6;&#x5F0F;&#x66F4;&#x65B0;&#x3002;</p>
+<p><img src="../assets/deploy/publish-to-github-01.jpg" alt="publish-to-github-01.jpg"></p>
+<h3 id="gighub-page">GigHub Page</h3>
+<p>&#x6253;&#x5F00;&#x4ED3;&#x5E93; <code>Settings</code> &#x5F80;&#x4E0B;&#x7FFB;&#xFF0C;&#x627E;&#x5230; GitHub Pages &#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x5177;&#x4F53;&#x914D;&#x7F6E;&#x53C2;&#x8003;&#x4E0B;&#x56FE;</p>
+<p><img src="../assets/deploy/publish-to-github-02.jpg" alt="publish-to-github-01.jpg"></p>
+<h3 id="gitbook-build">Gitbook Build</h3>
+<p>&#x7B14;&#x8005;&#x4F7F;&#x7528;&#x4E86;&#x4E24;&#x4E2A;&#x4ED3;&#x5E93;&#x5206;&#x522B;&#x7BA1;&#x7406;&#x6E90;&#x7801;&#x4E0E;&#x53D1;&#x5E03;&#x5185;&#x5BB9;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x597D;&#x5904;&#x662F;&#x64CD;&#x4F5C;&#x7B80;&#x5355;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># gitbook&#x6E90;&#x7801;</span>
+$ <span class="hljs-built_in">export</span> BOOK_SOURCE_DIR=&lt;uuu/vvv/www&gt;
+<span class="hljs-comment"># gitbook&#x520A;&#x7269;&#x76EE;&#x5F55;&#xFF0C;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x4E3A;&#x4E0A;&#x8FF0;&#x63D0;&#x5230;&#x7684;&#x4ED3;&#x5E93;&#x5185;&#x4E00;&#x7EA7;&#x76EE;&#x5F55;&#xFF0C;&#x5982;docs</span>
+$ <span class="hljs-built_in">export</span> BOOK_PUBLISH_DIR=&lt;xxx/yyy/zzz&gt;
+<span class="hljs-comment"># &#x53D1;&#x520A;&#x5566;</span>
+$ gitbook build <span class="hljs-variable">$BOOK_SOURCE_DIR</span> <span class="hljs-variable">$BOOK_PUBLISH_DIR</span>
+</code></pre>
+<h3 id="&#x53D1;&#x520A;">&#x53D1;&#x520A;</h3>
+<p>&#x4E0A;&#x4F20; github &#x5C31; ok &#x5566;&#xFF0C;github &#x4F1A;&#x81EA;&#x52A8;&#x66F4;&#x65B0; github page</p>
+<pre><code class="lang-bash">$ git pull origin master
+</code></pre>
 
 						
 					</section>
@@ -445,7 +451,7 @@
 	<script>
 		var gitbook = gitbook || [];
 		gitbook.push(function() {
-			gitbook.page.hasChanged({"page":{"title":"GitHub Page","level":"1.4.1","depth":2,"next":{"title":"GitLab Page","level":"1.4.2","depth":2,"path":"chapter03/gitlab_page.md","ref":"chapter03/gitlab_page.md","articles":[]},"previous":{"title":"部署发布","level":"1.4","depth":1,"ref":"","articles":[{"title":"GitHub Page","level":"1.4.1","depth":2,"path":"chapter03/github_page.md","ref":"chapter03/github_page.md","articles":[]},{"title":"GitLab Page","level":"1.4.2","depth":2,"path":"chapter03/gitlab_page.md","ref":"chapter03/gitlab_page.md","articles":[]},{"title":"[Http basic by nginx]","level":"1.4.3","depth":2,"ref":"","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-fontsettings","code","todo","splitter","search-pro","advanced-emoji","expandable-chapters","back-to-top-button","theme-fexa"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"todo":{},"splitter":{},"search-pro":{},"theme-fexa":{"logo":"/assets/logo.jpg","favicon":"/assets/favicon.ico","search-placeholder":"输入关键字搜索"},"code":{"copyButtons":true},"highlight":{},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"dongxz","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"showLogo":false,"showTitle":false,"showNavigator":false}},"title":"","language":"zh-hans","gitbook":"*","description":"使用 GitBook + Typora + Git 来写作的最佳实践"},"file":{"path":"chapter03/github_page.md","mtime":"2019-12-29T11:45:08.134Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-05T17:17:24.093Z"},"basePath":"..","book":{"language":""}});
+			gitbook.page.hasChanged({"page":{"title":"GitHub Page","level":"1.4.1","depth":2,"next":{"title":"GitLab Page","level":"1.4.2","depth":2,"path":"chapter03/gitlab_page.md","ref":"chapter03/gitlab_page.md","articles":[]},"previous":{"title":"部署发布","level":"1.4","depth":1,"ref":"","articles":[{"title":"GitHub Page","level":"1.4.1","depth":2,"path":"chapter03/github_page.md","ref":"chapter03/github_page.md","articles":[]},{"title":"GitLab Page","level":"1.4.2","depth":2,"path":"chapter03/gitlab_page.md","ref":"chapter03/gitlab_page.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-fontsettings","code","todo","splitter","search-pro","advanced-emoji","expandable-chapters","back-to-top-button","theme-fexa"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"todo":{},"splitter":{},"search-pro":{},"theme-fexa":{"logo":"/assets/logo.jpg","favicon":"/assets/favicon.ico","search-placeholder":"输入关键字搜索"},"code":{"copyButtons":true},"highlight":{},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"dongxz","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"showHome":false,"showLogo":false,"showTitle":false,"showNavigator":false}},"title":"","language":"zh-hans","gitbook":"*","description":"使用 GitBook + Typora + Git 来写作的最佳实践"},"file":{"path":"chapter03/github_page.md","mtime":"2020-02-05T18:16:45.276Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-05T18:20:03.298Z"},"basePath":"..","book":{"language":""}});
 		});
 	</script>
 </div>
